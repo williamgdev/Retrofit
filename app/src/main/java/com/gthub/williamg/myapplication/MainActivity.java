@@ -23,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
         ApiService apiService = retrofit.create(ApiService.class);
         apiService.getLiveStreamStatus()
                 .enqueue(new StreamStatusCallback());
+
+
     }
 }
