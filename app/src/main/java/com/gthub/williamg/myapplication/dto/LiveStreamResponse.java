@@ -4,7 +4,7 @@ package com.gthub.williamg.myapplication.dto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LiveStreamPojo {
+public class LiveStreamResponse extends BaseResponse{
     @SerializedName("live_stream")
     @Expose
     private LiveStream liveStream;

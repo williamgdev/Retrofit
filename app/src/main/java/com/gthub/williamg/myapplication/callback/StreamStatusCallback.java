@@ -3,18 +3,18 @@ package com.gthub.williamg.myapplication.callback;
 import android.util.Log;
 
 
-import com.gthub.williamg.myapplication.dto.LiveStreamPojo;
+import com.gthub.williamg.myapplication.dto.LiveStreamResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class StreamStatusCallback implements Callback<LiveStreamPojo> {
+public class StreamStatusCallback implements Callback<LiveStreamResponse> {
 
     private String TAG = "StreamStatusCallback ->";
 
     @Override
-    public void onResponse(Call<LiveStreamPojo> call, Response<LiveStreamPojo> response) {
+    public void onResponse(Call<LiveStreamResponse> call, Response<LiveStreamResponse> response) {
         if (response.body() != null) {
             if (response.body().getLiveStream() != null)
                 Log.d(TAG, "onResponse: State: " + response.body().getLiveStream().getState());
@@ -24,7 +24,7 @@ public class StreamStatusCallback implements Callback<LiveStreamPojo> {
     }
 
     @Override
-    public void onFailure(Call<LiveStreamPojo> call, Throwable t) {
+    public void onFailure(Call<LiveStreamResponse> call, Throwable t) {
         Log.e(TAG, "onFailure: error: ", t);
     }
 }
