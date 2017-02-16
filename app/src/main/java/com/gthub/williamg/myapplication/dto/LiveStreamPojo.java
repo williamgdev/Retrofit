@@ -1,13 +1,10 @@
-package com.gthub.williamg.myapplication;
+
+package com.gthub.williamg.myapplication.dto;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by wgutierrez on 2/16/17.
- */
-
-public class StreamStatus {
+public class LiveStreamPojo {
     @SerializedName("live_stream")
     @Expose
     private LiveStream liveStream;

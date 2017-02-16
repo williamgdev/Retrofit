@@ -1,12 +1,9 @@
-package com.gthub.williamg.myapplication;
+package com.gthub.williamg.myapplication.dto;
 
-/**
- * Created by wgutierrez on 2/16/17.
- */
-
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class Meta {
 
