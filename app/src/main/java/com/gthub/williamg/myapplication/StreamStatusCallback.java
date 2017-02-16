@@ -15,7 +15,8 @@ public class StreamStatusCallback implements Callback<StreamStatus> {
 
     @Override
     public void onResponse(Call<StreamStatus> call, Response<StreamStatus> response) {
-        Log.d(TAG, "onResponse: State: " + response.body().getLiveStream().getState());
+        if (response.body().getLiveStream() != null)
+            Log.d(TAG, "onResponse: State: " + response.body().getLiveStream().getState());
         if (response.body().getMeta() != null)
             Log.d(TAG, "onResponse: State: " + response.body().getMeta().getMessage());
     }
