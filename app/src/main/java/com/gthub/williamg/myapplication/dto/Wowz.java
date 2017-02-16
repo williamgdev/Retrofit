@@ -4,7 +4,7 @@ package com.gthub.williamg.myapplication.dto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Wowz {
+public class Wowz extends BaseDto{
 
     @SerializedName("name")
     @Expose

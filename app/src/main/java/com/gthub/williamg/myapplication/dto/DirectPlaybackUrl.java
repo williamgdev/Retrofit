@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class DirectPlaybackUrl {
+public class DirectPlaybackUrl extends BaseDto{
 
     @SerializedName("rtmp")
     @Expose

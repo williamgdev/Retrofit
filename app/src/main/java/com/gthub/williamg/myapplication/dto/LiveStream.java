@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class LiveStream {
+public class LiveStream  extends BaseDto{
 
     @SerializedName("aspect_ratio_height")
     @Expose
