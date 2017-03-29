@@ -16,7 +16,7 @@ public class UserResponse {
     private String name;
 
     @Element(name = "properties", required = false)
-    private String properties;
+    private Properties properties;
 
     public String getUsername() {
         return username;
@@ -42,11 +42,11 @@ public class UserResponse {
         this.name = name;
     }
 
-    public String getProperties() {
+    public Properties getProperties() {
         return properties;
     }
 
-    public void setProperties(String properties) {
+    public void setProperties(Properties properties) {
         this.properties = properties;
     }
 
