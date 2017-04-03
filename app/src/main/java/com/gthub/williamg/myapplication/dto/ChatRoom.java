@@ -8,7 +8,7 @@ import org.simpleframework.xml.Root;
 import java.util.List;
 
 @Root(name = "chatRoom")
-class ChatRoom {
+public class ChatRoom {
     @Element(name = "loginRestrictedToNickname", required = false)
     private String loginRestrictedToNickname;
     @Element(name = "broadcastPresenceRoles", required = false)

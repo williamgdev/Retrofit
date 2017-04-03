@@ -8,18 +8,18 @@ import java.util.List;
 @Root(name="chatRooms", strict = false)
 public class ChatRoomResponse  extends BaseResponse{
     @ElementList(inline=true)
-    private List<ChatRoom> chatRoom;
+    private List<ChatRoom> chatRooms;
 
-    public List<ChatRoom> getChatRoom() {
-        return chatRoom;
+    public List<ChatRoom> getChatRooms() {
+        return chatRooms;
     }
 
-    public void setChatRoom(List<ChatRoom> chatRoom) {
-        this.chatRoom = chatRoom;
+    public void setChatRooms(List<ChatRoom> chatRooms) {
+        this.chatRooms = chatRooms;
     }
 
     @Override
     public String toString() {
-        return "ClassPojo [chatRoom = " + chatRoom + "]";
+        return "ClassPojo [chatRooms = " + chatRooms + "]";
     }
 }
