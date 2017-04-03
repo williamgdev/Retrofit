@@ -3,6 +3,7 @@ package com.gthub.williamg.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.gthub.williamg.myapplication.callback.ChatRoomCallback;
 import com.gthub.williamg.myapplication.callback.EmptyCallback;
 import com.gthub.williamg.myapplication.callback.StreamStatusCallback;
 import com.gthub.williamg.myapplication.callback.UserCallback;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         apiService2.getUser("admin").enqueue(new UserCallback());
         UserRequest userRequest = new UserRequest("user1", "passwd1");
         apiService2.createUser(userRequest).enqueue(new EmptyCallback());
+        apiService2.getChatRooms("nameservice").enqueue(new ChatRoomCallback());
 
     }
 }
