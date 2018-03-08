@@ -3,10 +3,10 @@ package com.gthub.williamg.myapplication.dto;
 import org.simpleframework.xml.Attribute;
 
 class Properties {
-    @Attribute(name = "keyname")
+    @Attribute(name = "keyname", required = false)
     private String keyName;
 
-    @Attribute(name = "anotherkey")
+    @Attribute(name = "anotherkey", required = false)
     private long anotherKey;
 
     public String getKeyname() {

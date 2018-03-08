@@ -1,5 +1,7 @@
 package com.gthub.williamg.myapplication.network;
 
+import android.content.Context;
+
 import com.gthub.williamg.myapplication.restservice.ApiService;
 import com.gthub.williamg.myapplication.restservice.OpenFireApiService;
 
@@ -11,11 +13,11 @@ public class ServiceFactory {
     private static final String BASE_URL = "https://api.cloud.wowza.com/api/v1/";
     public static final String STREAM_ID = "c9jf5cdq";
 
-    public static ApiService createAPiService(){
+    public static ApiService createAPiService(Context context){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(WowzaInterceptor.buildHttpClient())
+                .client(WowzaInterceptor.buildHttpClient(context))
                 .build();
 
         ApiService apiService = retrofit.create(ApiService.class);
@@ -24,10 +26,10 @@ public class ServiceFactory {
 
     }
 
-    public static OpenFireApiService createOpenFireAPIService(String baseUrl){
+    public static OpenFireApiService createOpenFireAPIService(String baseUrl, Context context){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
-                .client(OpenFireInterceptor.buildHttpClient())
+                .client(OpenFireInterceptor.buildHttpClient(context))
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
 

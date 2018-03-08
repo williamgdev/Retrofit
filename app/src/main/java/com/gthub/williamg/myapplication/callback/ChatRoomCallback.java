@@ -27,6 +27,7 @@ public class ChatRoomCallback implements Callback<ChatRoomResponse> {
                     listener.notifyChatRoomResponse(Channel.create(response.body().getChatRooms()));
                 break;
             default:
+                Log.d(TAG, "onResponse: " + response.code());
                 break;
         }
     }

@@ -15,7 +15,9 @@ public class EmptyCallback implements Callback<Void> {
             case 201:
                 Log.d(TAG, "onResponse: OK");
                 break;
+
             default:
+                Log.d(TAG, "onResponse: " + response.code());
                 break;
         }
     }
