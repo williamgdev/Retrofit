@@ -10,7 +10,7 @@ import retrofit2.http.Path;
  * Created by wgutierrez on 2/16/17.
  */
 
-public interface ApiService {
+public interface WowzaApiService {
     @PUT("live_streams/{id}/start")
     Call<LiveStreamResponse> startLiveStream(@Path("id") String id);
 
