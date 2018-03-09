@@ -105,3 +105,14 @@ Sample Response :
             private String text;
         }
     }
+
+*HTTP Status Codes*:
+1.    OK = 200;
+2.    BAD_REQUEST = 400;
+3.    SERVER_ERROR = 500;
+4.    CREATED = 201;
+5.    NOT_FOUND = 404;
+6.    CONFLICT = 409;
+7.    UNAUTHORIZED = 401;
+**all code here**   [HTTP_Status_Codes](http://www.restpatterns.org/HTTP_Status_Codes/)
+
