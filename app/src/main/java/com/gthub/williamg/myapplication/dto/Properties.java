@@ -1,27 +1,28 @@
 package com.gthub.williamg.myapplication.dto;
 
-import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Path;
 
-class Properties {
-    @Attribute(name = "keyname", required = false)
-    private String keyName;
+import java.util.List;
 
-    @Attribute(name = "anotherkey", required = false)
-    private long anotherKey;
+public class Properties {
 
-    public String getKeyname() {
-        return keyName;
+    @ElementList(inline=true)
+    private List<Property> property;
+
+    public List<Property> getProperty ()
+    {
+        return property;
     }
 
-    public void setKeyname(String keyName) {
-        this.keyName = keyName;
+    public void setProperty (List<Property> property)
+    {
+        this.property = property;
     }
 
-    public long getAnotherKey() {
-        return anotherKey;
-    }
-
-    public void setAnotherKey(long anotherKey) {
-        this.anotherKey = this.anotherKey;
+    @Override
+    public String toString()
+    {
+        return "ClassPojo [property = "+property+"]";
     }
 }

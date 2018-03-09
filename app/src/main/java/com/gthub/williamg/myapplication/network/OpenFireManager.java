@@ -76,11 +76,7 @@ public class OpenFireManager {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 switch (response.code()) {
                     case OpenFireManagerListener.CREATED:
-                        if (response.body() != null) {
-                            listener.onSuccess(true);
-                        } else {
-                            listener.onSuccess(false);
-                        }
+                        listener.onSuccess(true);
                         break;
                     case OpenFireManagerListener.SERVER_ERROR:
                         listener.onSuccess(false);

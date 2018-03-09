@@ -9,6 +9,8 @@ public class UserRequest {
     private String username;
     @Element(name = "password")
     private String password;
+    @Element(name = "properties", required = false)
+    private Properties properties;
 
     public UserRequest(String username, String password) {
         this.username = username;
@@ -21,6 +23,14 @@ public class UserRequest {
 
     public String getPassword() {
         return password;
+    }
+
+    public Properties getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Properties properties) {
+        this.properties = properties;
     }
 }
 
