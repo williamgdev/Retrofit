@@ -1,15 +1,12 @@
 package com.gthub.williamg.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.TimeUtils;
 import android.widget.Toast;
 
 import com.gthub.williamg.myapplication.dto.Properties;
 import com.gthub.williamg.myapplication.dto.Property;
 import com.gthub.williamg.myapplication.dto.UserRequest;
-import com.gthub.williamg.myapplication.dto.UserResponse;
-import com.gthub.williamg.myapplication.model.Channel;
 import com.gthub.williamg.myapplication.network.OpenFireManager;
 
 import java.util.ArrayList;
