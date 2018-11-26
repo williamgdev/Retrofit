@@ -3,4 +3,9 @@
     <string name="openfire_key">key</string>
     <string name="wsc_api_key">key</string>
     <string name="wsc_access_key">key</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="java_example">Java Example</string>
+    <string name="kotlin_example">Kotlin Example</string>
 </resources>

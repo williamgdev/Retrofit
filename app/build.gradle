@@ -42,5 +42,7 @@ dependencies {
         exclude module: 'stax'
         exclude module: 'xpp3'
     }
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
 }
